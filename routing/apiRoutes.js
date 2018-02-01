@@ -16,7 +16,7 @@ var chosenBookCover;
 console.log('scores', userInput.scores);
 for(var i=0; i<booksData.length; i++){
     for(var j=0; j<userInput.scores.length;j++){
-        var scoreDiff = Math.abs(booksData[i].scores[j]-userInput.scores[j]);
+        var scoreDiff = Math.abs(booksData[i].scores[j]-parseInt(userInput.scores[j]));
         totalDifference += scoreDiff;
     }
     var bookObject = {

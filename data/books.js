@@ -24,11 +24,6 @@ var books = [{
     "scores":[5, 2, 5, 0, 3, 3, 5, 1, 3, 1]
 },
 {
-    "title":"To Kill a Mockingbird",
-    "photo":"../images/tkam_cover.jpg",
-    "scores":[3, 3, 1, 0, 3, 1, 1, 2, 4, 5]
-},
-{
     "title":"The Last Battle",
     "photo":"../images/lastbattle_cover.jpg",
     "scores":[2, 2, 5, 0, 1, 1, 2, 1, 3, 2]
