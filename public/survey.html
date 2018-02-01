@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Book Survey</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <style>
+       
+        .slider{
+            margin: 10px;
+        }
+        body {
+            background-image: url("images/background_books.jpg");
+        }
+        .whiteText{
+            color:white;
+        }
+        </style>
+    </head>
+    
+      <div class="container">
+        <div class="col-xs-12 well">
+        <h2 class="text-center">Survey Questions</h2>
+        <h4 class="text-center">Find your next book to read here!</h4>
+        <hr>
+    </div>
+        <div class="col-xs-12 well well-lg">
+        <h3><strong>Question 1</strong></h3>
+        <h4>How long do you want your next read to be?</h4>
+        <select class="chosen-select" id="q1">
+          <option value=""></option>
+          <option value="1">1 (Short)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Long)</option>
+        </select>
+    </div>
+
+    <div class="col-xs-12 well well-lg">
+            
+        <h3><strong>Question 2</strong></h3>
+        <h4>How difficult a read will this be?</h4>
+        <select class="chosen-select" id="q2">
+          <option value=""></option>
+          <option value="1">1 (Easy)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Very difficult)</option>
+        </select>
+     </div>
+    
+    <div class="col-xs-12 well well-lg">
+    
+        <h3><strong>Question 3</strong></h3>
+        <h4>How fantastical?</h4>
+        <select class="chosen-select" id="q3">
+          <option value=""></option>
+          <option value="1">1 (No magic, please)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (I want dragons and all that shit)</option>
+        </select>
+    </div>
+    
+    <div class="col-xs-12 well well-lg">
+    
+        <h3><strong>Question 4</strong></h3>
+        <h4>Do you want it to be non-fiction?</h4>
+        <select class="chosen-select" id="q4">
+          <option value=""></option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+          
+        </select>
+    </div>
+    
+    <div class="col-xs-12 well well-lg">
+    
+        <h3><strong>Question 5</strong></h3>
+        <h4>Do you want there to be some mystery?</h4>
+        <select class="chosen-select" id="q5">
+          <option value=""></option>
+          <option value="1">1 (I want to know about everything that's going on.)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (I want to be as confused as I was by the ending of Lost)</option>
+        </select>
+    </div>
+    
+    <div class="col-xs-12 well well-lg">
+    
+        <h3><strong>Question 6</strong></h3>
+        <h4>Will there be romance?</h4>
+        <select class="chosen-select" id="q6">
+          <option value=""></option>
+          <option value="1">1 (Yuck!)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Romeo and Juliet minus the suicide!)</option>
+        </select>
+    </div>
+    
+    <div class="col-xs-12 well well-lg">
+    
+        <h3><strong>Question 7</strong></h3>
+        <h4>Do you want some adventure?</h4>
+        <select class="chosen-select" id="q7">
+          <option value=""></option>
+          <option value="1">1 (Just a setting or two, if that.)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Give me the next Swiss Family Robinson!)</option>
+        </select>
+    </div>
+    
+    <div class="col-xs-12 well well-lg">
+        <h3><strong>Question 8</strong></h3>
+        <h4>Do you want there to be strong female characters?</h4>
+        <select class="chosen-select" id="q8">
+          <option value=""></option>
+          <option value="1">1 (A little backwards...)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (The most progressive!)</option>
+        </select>
+    </div>
+    
+    <div class="col-xs-12 well well-lg">
+        <h3><strong>Question 9</strong></h3>
+        <h4>How many main characters?</h4>
+        <select class="chosen-select" id="q9">
+          <option value=""></option>
+          <option value="1">1 (One or fewer)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Five or more)</option>
+        </select>
+    </div>
+    
+    <div class="col-xs-12 well well-lg">
+        <h3><strong>Question 10</strong></h3>
+        <h4>How much do you want to learn from what you read?</h4>
+        <select class="chosen-select" id="q10">
+          <option value=""></option>
+          <option value="1">1 (Nothing! Don't teach me things!)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Why else do we read, but to learn?)</option>
+        </select>
+    </div>
+    
+        <br>
+        <br>
+    
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+         Submit</button>
+    
+        <hr>
+        <footer class="footer">
+          <div class="container">
+            <p class="whiteText"><a href="/api/books">API Book List</a> | <a href="https://github.com/bewitchedfencer/BookFinder/tree/master/app">GitHub Repo</a></p>
+          </div>
+        </footer>
+    
+      </div>
+    
+      <!-- Modal -->
+      <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title"><strong>Best Match</strong></h2>
+            </div>
+            <div class="modal-body">
+              <h2 id="match-name"></h2>
+              <img id="match-img" src="" alt="book cover">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+
+
+        // Capture the form inputs
+        $("#submit").on("click", function(event) {
+          event.preventDefault();
+
+            // Create an object for the user"s data
+            var userPreference = {
+              scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()
+              ]
+            };
+            console.log(userPreference);
+            // AJAX post the data to the friends API.
+            $.post("api/books", userPreference, function(data) {
+              if(data){
+              // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+              $("#match-name").text(data.title);
+              $("#match-img").attr("src", data.cover);
+              $('#results-modal').modal('show')
+              };
+            });
+        });
+      </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "bookfinder",
+  "version": "1.0.0",
+  "description": "Book Finder Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bewitchedfencer/BookFinder.git"
+  },
+  "author": "Alexa Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bewitchedfencer/BookFinder/issues"
+  },
+  "homepage": "https://github.com/bewitchedfencer/BookFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap-slider": "^10.0.0",
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  }
+}
