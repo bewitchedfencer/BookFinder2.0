@@ -6,39 +6,33 @@ app.get("/api/books", function(req, res){
     res.sendFile(path.join(__dirname, "../data/books.js"))
 });
 
-app.post("/api/books", function(req, res) {
+app.post("api/books", function(req, res) {
    //need the internal structure to this once I have more information about the survey data
 var userInput = req.body;
+userScores = userInput['scores[]'];
+console.log(userInput);
 var totalDifference =0;
-var differentArray = [];
-var chosenBook;
-var chosenBookCover;
+var chosenBook={
+    chosenTitle:"",
+    chosenBookCover:"",
+    chosenDifference:Infinity
+};
 console.log('scores', userInput.scores);
 for(var i=0; i<booksData.length; i++){
+    currentBook = booksData[i];
     for(var j=0; j<userInput.scores.length;j++){
-        var scoreDiff = Math.abs(booksData[i].scores[j]-parseInt(userInput.scores[j]));
-        totalDifference += scoreDiff;
+        currentUserScore=userInput.scores[j];
+        currentBookScores=currentBook.scores[j];
+        totalDifference += Math.abs(parseInt(currentBookScores)-parseInt(currentUserScore));
+        console.log(totalDifference);
     }
-    var bookObject = {
-        title:booksData[i].title,
-        photo:booksData[i].photo,
-        totalDifference:totalDifference};
-        differentArray.push(bookObject);        
+    if(totalDifference<=chosenBook.chosenDifference){
+        chosenBook.chosenTitle=currentBook.title;
+        chosenBook.chosenBookCover=currentBook.photo;
+        chosenBook.chosenDifference= totalDifference;
     }
-    var lowest = Number.POSITIVE_INFINITY;
-    for (var i=0; i<differentArray.length; i++) {
-        tmp = differentArray[i].totalDifference;
-        if (tmp < lowest){ 
-            lowest = tmp;
-            chosenBook = differentArray[i].title;
-            chosenBookCover = differentArray[i].photo;
-
-    }};
-    var sendBack = {
-        title:chosenBook,
-        cover:chosenBookCover
-    }
-    res.json(sendBack);
+}
+    res.json(chosenBook);
 });
 
 };
