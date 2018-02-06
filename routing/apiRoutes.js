@@ -17,9 +17,9 @@ var chosenBook={
     chosenBookCover:"",
     chosenDifference:Infinity
 };
-console.log('scores', userInput.scores);
 for(var i=0; i<booksData.length; i++){
     currentBook = booksData[i];
+    totalDifference = 0;
     for(var j=0; j<userInput.scores.length;j++){
         currentUserScore=userInput.scores[j];
         currentBookScores=currentBook.scores[j];

@@ -5,7 +5,7 @@ var books = [{
 },
 {
     "title":"Art of War",
-    "photo":"../public/images/aow_cover.jpg",
+    "photo":"../images/aow_cover.jpg",
     "scores":[3, 5, 1, 1, 1, 1, 1, 1, 1, 5]
 },
 {
@@ -20,12 +20,12 @@ var books = [{
 },
 {
     "title":"Eragon",
-    "photo":"../images/Eragon_book_cover.jpg",
+    "photo":"../images/Eragon_book_cover.png",
     "scores":[5, 2, 5, 0, 3, 3, 5, 1, 3, 1]
 },
 {
     "title":"The Last Battle",
-    "photo":"../images/lastbattle_cover.jpg",
+    "photo":"../images/lastbattle_cover.jpeg",
     "scores":[2, 2, 5, 0, 1, 1, 2, 1, 3, 2]
 },
 {
@@ -40,7 +40,7 @@ var books = [{
 },
 {
     "title":"Queen of the Tearling",
-    "photo":"../images/qott_cover.jpg",
+    "photo":"../images/qott_cover.jpeg",
     "scores":[4, 2, 4, 0, 3, 3, 4, 5, 4, 2]
 },
 {
